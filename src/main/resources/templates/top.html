@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" th:href="@{/css/top.css}">
+	<meta charset="UTF-8">
+	<title>兎☆戯☆王</title>
+	
+</head>
+
+<body>
+	<!-- 背景画像を作成する為のクラス -->
+	<div class="background-container">
+	
+	<div class="container">
+		
+		<img th:src="@{/images/title2.png}"width="1000" height="600">
+		<br>
+		<br>
+		<br>
+		<br>
+		<a th:href="@{/cardgame/select}"class="button">開始</a>
+		<br>
+		<br>
+		<a th:href="@{/cardgame/rule}"class="button">遊び方</a>
+		
+	</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>兎☆戯☆王</title>
+<link rel="stylesheet" th:href="@{/css/show.css}">
+</head>
+<body>
+
+<!--	<h3 th:text="${deckForm.selected}">タイトル</h3>-->
+	<form method="POST">
+		<input type="hidden" th:field="${deckForm.selected}">
+		<div th:switch="${deckForm.selected}">
+		<img th:case="1" th:src="@{/images/usaDeck.jpg}" alt="ウサギデッキを表示">
+		<img th:case="2" th:src="@{/images/hamuDeck.jpg}" alt="ハムスターデッキを表示">
+		<img th:case="3" th:src="@{/images/waraDeck.jpg}" alt="ワラビーデッキを表示">
+		</div>
+		<input type="submit" value="デッキ選択画面に戻る" th:formaction="@{/cardgame/select}" formmethod="GET"class="button">
+		<input type="submit" value="ゲーム開始" th:formaction="@{/cardgame/play}">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* 枠線の編集 */
+.box1 {
+    padding: 0.5em 1em;/* 内側の余白を上下0.5em、左右1emに設定 */
+    margin: 2em 0;/* 外側の余白を上下2em、左右は0に設定 */
+    font-weight: bold;/* 文字を太字に設定 */
+    border: solid 3px white;/* 3ピクセルの白い実線の枠を設定 */
+    width: 50%; /* 要素の幅を50%に設定 */
+}
+
+/* 枠内の文字の編集 */
+.box1 p {
+    margin: 0; 
+    padding: 0;
+    font-size: 30px;
+    color: white;
+}
+
+/* 「タイトルに戻る」ボタンの色、サイズ */
+a {
+	color:white;
+	font-size: 30px;
+}
+
+/* 背景画像の編集 */
+.background-container {
+    background-image: url('../images/haikei1.jpg'); /* 画像のパス */
+    background-size: cover; /* 画像を全体に表示 */
+    background-position: center; /* 画像を中央に配置 */
+    height: 100vh; /* 画面全体の高さに設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

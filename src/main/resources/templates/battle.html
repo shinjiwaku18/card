@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 兎☆戯☆王</title>
+	<link rel="stylesheet" th:href="@{/css/battle.css}">
+</head>
+
+<body>
+	<!-- 背景画像を作成する為のクラス -->
+		<div class="background-container">
+			
+	<form th:method="POST" th:action="@{/cardgame/result}">
+
+
+		<div class="battleArea">
+			<!--NPCのエリア -->
+			<div th:object="${npcForm}">
+
+				<img th:src="${npcForm.nUrl}" alt="モンスターの画像を表示">
+				<div class="npcAtk">
+					<p th:text="${npcForm.nMonster.atk}"></p>
+				</div>
+
+				<input type="hidden" th:field="${npcForm.nMonster.atk}" >
+				<input type="hidden" th:field="${npcForm.nUrl}">
+			</div>
+
+			<div class="container">
+				<input type="submit" value="バトル！" class="button">
+			</div>
+
+			<!--自プレイヤーのエリア -->
+			<div th:object="${playerForm}">
+				<div class="playerAtk">
+					<img th:src="${playerForm.pUrl}" alt="モンスターの画像を表示" th:field="${playerForm.pUrl}">
+					<p th:text="${playerForm.pMonster.atk}"></p>
+				</div>
+				<input type="hidden" th:field="${playerForm.pMonster.atk}" >
+				<input type="hidden" th:field="${playerForm.pUrl}">
+				<input type="hidden" th:field="${playerForm.won}">
+				<input type="hidden" th:field="${deckForm.selected}">
+
+			</div>
+		</div>
+
+	</form>
+	
+		</div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title> 兎☆戯☆王</title>
+</head>
+<link rel="stylesheet" th:href="@{/css/end.css}">
+
+<body>
+	
+	
+	
+	<h1 th:text="${msg}">プレイヤーの勝敗を表示</h1>
+	<div class="continue">
+		<br>
+		<form method="POST" th:action="@{/cardgame/play}" th:object="${deckForm}">
+			<input type="hidden" th:field="${deckForm.selected}">
+			<input type="submit" value="同じデッキでもう一度遊ぶ"class="button">
+		</form>
+		<br>
+		<br>
+		<a th:href="@{/cardgame/select}">デッキ選択に戻る</a>
+	</div>
+	<div class="finish">
+		<a th:href="@{/cardgame}">ゲーム終了で閉じる</a>
+	</div>
+	
+		
+	<!-- 背景色 -->
+	<body bgcolor="	#003366">
+		
+		
+
+
+</body>
+
+</html>

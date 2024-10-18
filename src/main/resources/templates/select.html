@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" th:href="@{/css/select.css}">
+
+	<meta charset="UTF-8">
+	<title>兎☆戯☆王</title>
+</head>
+
+<form method="POST" th:object="${deckForm}">
+	<!-- デッキ選択 -->
+	<div class="gazou-form">
+	  <input id="image_a" type="radio" value="1" th:field="*{selected}">
+	  <label for="image_a"><img th:src="@{/images/usas.jpg}" width="600" height="800"></label>
+	  <input id="image_b" type="radio" value="2" th:field="*{selected}">
+	  <label for="image_b"><img th:src="@{/images/hamus.jpg}" width="600" height="800"></label>
+	  <input id="image_c" type="radio" value="3" th:field="*{selected}">
+	  <label for="image_c"><img th:src="@{/images/waras.jpg}" width="600" height="800"></label>
+	</div>
+
+		<!-- 次の画面選択 -->
+	<input type="submit" value="デッキ参照" class="button" th:formaction="@{/cardgame/deck}">
+	<input type="submit" value="決定" class="button" th:formaction="@{/cardgame/play}">
+	<p th:if="${err}" style="color: red;">デッキが選択されていません</p>
+</form>
+
+<!-- 背景色 -->
+<body bgcolor="#003366">
+	
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">>
+
+<head>
+	<meta charset="UTF-8">
+	<title>兎☆戯☆王</title>
+	<link rel="stylesheet" th:href="@{/css/result.css}">
+</head>
+
+<body>
+	<!-- 背景画像を作成する為のクラス -->
+<div class="background-container">
+	
+	<form th:method="POST" th:action="@{/cardgame/play}">
+	 <div class="Area">
+		
+		<!--NPCのエリア -->
+		<div th:object="${npcForm}">
+			<p th:text="${nMsg}"></p>
+			 <img th:src="${npcForm.nUrl}" alt="モンスターの画像を表示" th:field="${npcForm.nUrl}">
+			<div class="npcAtk">
+			 <p th:text="${npcForm.nMonster.atk}" th:field="${npcForm.nMonster.atk}"></p>
+			</div>
+		</div>
+		
+		<div th:object="${deckForm}" th:if="${next}">
+
+			<input type="hidden" th:field="${deckForm.selected}">
+			<input type="submit" value="次へ"class="button">
+
+		</div>
+		
+		<div th:object="${deckForm}" th:unless="${next}">
+			<input type="hidden" th:field="${deckForm.selected}">
+			<input type="hidden" th:field="${playerForm.won}">
+			 <div class="container1">
+			  <input type="submit" value="バトルを終了する"class="button1" th:formaction="@{/cardgame/end}">
+			 </div>
+		</div>
+		
+		<!--自プレイヤーのエリア -->
+		<div th:object="${playerForm}">
+			<div class="playerAtk">
+			 <p th:text="${pMsg}"></p>
+			<img th:src="${playerForm.pUrl}" alt="モンスターの画像を表示" th:field="${playerForm.pUrl}">
+			<p th:text="${playerForm.pMonster.atk}" th:field="${playerForm.pMonster.atk}"></p>
+			<input type="hidden" th:field="${playerForm.won}">
+		    </div>
+	    </div>
+	</div>
+	</form>
+	
+<!--	<form method="POST" th:action="@{/cardgame/end}" th:object="${deckForm}" th:unless="${next}">-->
+
+<!--		<input type="hidden" th:field="${deckForm.selected}">-->
+<!--		<input type="hidden" th:field="${playerForm.won}">-->
+<!--		 <div class="container1">-->
+<!--		  <input type="submit" value="バトルを終了する"class="button1" th:formaction="@{/cardgame/end}">-->
+<!--		 </div>-->
+
+<!--	</form>-->
+</div>
+	<!-- 背景色 -->
+	<body bgcolor="	#003366">
+		
+</body>
+
+</html>

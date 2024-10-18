@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*「涌嶋が記述した画像表示」のサイズ変更
+p.gazou img {
+    width: 400px; 
+    height: 600px;
+}
+*/
+
+/* 「涌嶋が記述したラジオボタン付き画像表示」のサイズ変更　*/
+/* ラジオボタンの○を消す */
+.gazou-form input[type="radio"] {
+    display: none;
+}
+/* 画像の周りに隙間をあける */
+.gazou-form label img {
+    margin: 6px;
+    padding: 10px;
+}
+/* 未選択の場合、色を薄くする */
+.gazou-form input[type="radio"] + label img {
+    opacity:0.7;
+}
+/* 選択済みの場合、色を濃くする */
+.gazou-form input[type="radio"]:checked + label img {
+    opacity:1;
+}
+
+
+/* デッキ参照と決定ボタンのサイズ変更 */
+.button{
+height:100px;
+width:400px;
+}
+
+/* デッキ参照と決定ボタンのデザイン変更 */
+.button {
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 17pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 25px;   /* 余白       */
+  background    : #6666ff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #6666ff;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #6666ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+

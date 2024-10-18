@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* 全体のスタイル */
+body {
+    display: flex;                  /* フレックスボックスを使用 */
+    flex-direction: column;        /* 縦方向に配置 */
+    justify-content: flex-start;        /* 中央に配置 */
+    align-items: flex-start;            /* 縦方向中央に配置 */
+    margin: 0;                     /* デフォルトのマージンをリセット */
+    background-color: #003366;     /* 背景色 */
+    font-family: Arial, sans-serif; /* フォント設定 */
+}
+
+/* 画像のスタイル */
+img {
+    max-width: 360%;               /* 画面幅に合わせる */
+    max-height: 320%;              /* 画面高さ合わせる */
+    object-fit: contain;           /* アスペクト比を維持しつつ収める */
+}
+
+/* フォームのスタイル */
+form {
+    text-align: center;            /* フォーム内の要素を中央に配置 */
+    width: 600px;
+    height: em;
+}
+
+/* ボタンのスタイル */
+input[type="submit"] {
+    margin: 5px;                  /* ボタン間のマージン */
+    padding: 20px 30px;           /* ボタンの内側の余白 */
+    cursor: pointer;               /* ポインターを手の形に */
+}
+
+

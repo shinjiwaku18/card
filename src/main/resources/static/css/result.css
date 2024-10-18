@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+/* 画像サイズ変更 */
+img {
+ width: 500px;
+ height: 700px;
+}
+
+.Area {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* 文字サイズ変更*/
+p {
+  font-size: 100px
+}
+
+p {
+	color:white;
+}
+
+/* 文字を中央揃え */
+.npcAtk {
+  text-align: center;
+}
+.playerAtk {
+  text-align: center;
+  
+}
+
+/* 「次へ」ボタンのサイズ */
+.button{
+ height:100px;
+ width:250px;
+ font-size: 25px;
+}
+
+/* 「次へ」ボタンを中央揃え */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  ページ全体で中央に配置するための高さ */
+}
+
+/* 「バトルを終了する」ボタンのサイズ */
+.button1{
+ height:100px;
+ width:250px;
+ font-size: 25px;
+}
+
+/* 「バトルを終了する」ボタンを中央揃え */
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  ページ全体で中央に配置するための高さ */
+}
+
+/* 背景画像の編集 */
+.background-container {
+    background-image: url('../images/haikei1.jpg'); /* 画像のパス */
+    background-size: cover; /* 画像を全体に表示 */
+    background-position: center; /* 画像を中央に配置 */
+    height: 100vh; /* 画面全体の高さに設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

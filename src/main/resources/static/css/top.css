@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+a {
+	position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #eee;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+}
+
+a:hover{
+	transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+/* 開始と遊び方ボタンのサイズ変更 */
+.button{
+	height:50px;
+	width:400px;
+}
+
+/* 開始と遊び方ボタンのデザイン変更 */
+.button {
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 17pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 25px;   /* 余白       */
+  background    : #6666ff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #6666ff;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #6666ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+/* 背景画像を透過
+img {
+  mix-blend-mode: multiply;
+  height: auto;
+}
+*/
+
+/* 背景画像の編集 */
+.background-container {
+    background-image: url('../images/haikei1.jpg'); /* 画像のパス */
+    background-size: cover; /* 画像を全体に表示 */
+    background-position: center; /* 画像を中央に配置 */
+    height: 100vh; /* 画面全体の高さに設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+

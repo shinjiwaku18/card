@@ -1,0 +1,211 @@
+
+
+/*初期値*/
+/*@charset "UTF-8";*/
+/*body{*/
+/*	background-image: url('../images/battle_background.jpg');  画像のパス */
+/*    background-size: cover;  画像を画面全体に広げる */
+/*    background-repeat: no-repeat;  画像の繰り返しを無効化 */
+/*    background-position: center;  画像を中央に配置 */
+/*    margin: 0;  デフォルトのマージンをリセット */
+/*    padding: 0;  デフォルトのパディングをリセット */
+/*    height: 100vh;  ビューポートの高さを100%に設定 */
+/*}*/
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: #003366;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.game-board {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.opponent-area {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.opponent-graveyard-hp-area {*/
+/*	display: flex;*/
+/*	justify-content: space-between;*/
+/*	margin-bottom: 20px;*/
+/*	width: 100vw;*/
+/*}*/
+
+/*.opponent-deck-monster-area {*/
+/*	display: flex;*/
+/*	justify-content: flex-start;*/
+/*	width: 100%;*/
+/*}*/
+
+/*.opponent-deck-area {*/
+/*	display: flex;*/
+/*	justify-content: left;*/
+/*	margin-bottom: 20px;*/
+/*}*/
+
+/*.opponent-monster-area {*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	margin-bottom: 20px;*/
+/*}*/
+
+/*.opponent-deck-count {*/
+/*	text-align: left;*/
+/*}*/
+
+/*.opponent-deck-area {*/
+/*	background-color: #ffe599;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 80px;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*.opponent-monster-slot {*/
+/*	background-color: #ffe599;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 80px;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*.player-area {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.player-deck-count {*/
+/*	text-align: right;*/
+/*	width: 100vw;*/
+/*}*/
+
+/*.player-deck-monster-area {*/
+/*	display: flex;*/
+/*	justify-content: flex-start;*/
+/*	width: 100%;*/
+/*}*/
+
+/*.player-graveyard-hp-area {*/
+/*	display: flex;*/
+/*	justify-content: space-between;*/
+/*	margin-bottom: 20px;*/
+/*	width: 100vw;*/
+/*}*/
+
+/*.graveyard-area {*/
+/*	background-color: #f4cccc;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 100px;*/
+/*    text-align: center;*/
+/*}*/
+/*.hp-area {*/
+/*    background-color: #f4cccc;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 150px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.player-monster-slot {*/
+/*    background-color: #ffe599;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 80px;*/
+/*    margin-left: auto;*/
+/*}*/
+
+/*.deck-area {*/
+/*	background-color: #ffe599;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 80px;*/
+/*	margin-left: auto;*/
+/*}*/
+
+/*.hand-area {*/
+/*    margin-bottom: 20px;*/
+/*    background-color: #b3d4fc;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    width: 300px;*/
+/*    text-align: center;*/
+/*}*/
+
+/* 画像サイズ変更 */
+img {
+ width: 500px;
+ height: 700px;
+}
+
+.battleArea {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* 文字サイズ変更*/
+p {
+  color:white;
+}
+
+p {
+  font-size: 100px
+  }
+
+/* 文字を中央揃え */
+.npcAtk {
+  text-align: center;
+}
+.playerAtk {
+  text-align: center;
+  
+}
+
+/* バトル開始ボタンのサイズ */
+.button{
+ height:100px;
+ width:250px;
+ font-size: 25px;
+}
+
+/* バトル開始ボタンを中央揃え */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  ページ全体で中央に配置するための高さ */
+}
+
+/* 背景画像の編集 */
+.background-container {
+    background-image: url('../images/haikei1.jpg'); /* 画像のパス */
+    background-size: cover; /* 画像を全体に表示 */
+    background-position: center; /* 画像を中央に配置 */
+    height: 100vh; /* 画面全体の高さに設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+

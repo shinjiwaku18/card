@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>兎☆戯☆王</title>
+</head>
+<link rel="stylesheet" th:href="@{/css/rule.css}">
+
+<body>
+	
+	<!-- 背景画像を作成する為のクラス -->
+	<div class="background-container">
+	
+	<!-- 枠線を編集する為のクラス -->		
+	<div class="box1">
+	<p>ルール説明</p>
+	<p>勝利条件：カードバトルを5回行い勝利回数が多い方が勝ち</p>
+	<br>
+	<p>まずは3種のデッキから1つ選択</p>
+	<p>バトル画面ではデッキからランダムに1枚づつモンスターカードが表示される</p>
+	<p>攻撃力がNPCのモンスターカードを上回っていれば勝ち点1</p>
+	<p>攻撃力が同じ場合50％の確率で勝利</p>
+	</div>
+	</div>
+	
+	<!-- タイトルに戻るボタン -->
+	<a th:href="@{/cardgame}">タイトルに戻る</a>
+	
+	<!-- 背景色 -->
+	<body bgcolor="#003366">
+		
+</body>
+</html>

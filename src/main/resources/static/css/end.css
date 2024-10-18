@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 「あなたの勝ち」中央、サイズ、色 */
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color:white;
+  }
+
+ .finish{
+    text-align: right;
+    
+}
+/* 「デッキ選択に戻る、ゲーム終了で閉じる」サイズ、色 */
+a {
+	font-size: 50px;
+	color:white;
+}
+
+.button{
+	height:100px;
+	width:400px;
+}
+
+
+
+
